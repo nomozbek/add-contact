@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add contact</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h2 class="heading text-center text-primary">Add contacts</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <form class="add-form d-flex flex-column p-3 w-75" action="POST">
+         
+          <input class="first-name m-3 border-primary" type="text" name="name:" id="first-name" placeholder="Enter your name:" required>
+
+          <input class="last-name m-3 border-primary" type="text" name="name:" id="last-name" placeholder="Enter your surname:" required>
+
+          <select class="relative-select m-3 border-primary" name="" id="">
+            <option value="relative">Relative</option>
+            <option value="relative">Friend</option>
+          </select>
+
+          <input class="phone-number m-3 border-primary" type="text" name="name:" id="first-name" placeholder="Enter phone number:" required>
+
+          <button class="button btn btn-primary mt-3" type="submit">Add contact</button>
+        </form>
+      </div>
+
+      <div class="col-6">
+        <ul class="result-part mt-4">
+          <li class="contacts-list mb-3 d-flex flex-column p-3  border border-2 border-primary rounded-2">
+            <p><span class="text-primary d-inline-block w-25">Name:</span> <span>Ivan</span></p>
+            
+            <p><span class="text-primary d-inline-block w-25">Last-name:</span> <span>Ivanov</span></p>
+
+            <p><span class="text-primary d-inline-block w-25">Relation:</span> <span>Qarindosh</span></p>
+
+            <p><span class="text-primary d-inline-block w-25">Phone number:</span> <span>+09203920302903</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <link rel="stylesheet" href="./bootstrap/js/bootstrap.bundle.min.js">
+  <script src="./js/script.js"></script>
+</body>
+</html>
